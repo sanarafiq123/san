@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>guest House</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="menu-bar">
+     <ul>
+
+            <li class="logo "><a href="#home"></a><img src="41700630.jpg" alt="Logo" class="animated-logo" style="height:5% ; width: 5%; text-align: left;"></a></li>
+   
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li> <a href="#map"> Map</a></li>
+        </ul>
+
+    </div>
+    <div class="hero-section">
+        <img src="aaa.jpg" alt="Building">
+        <div class="hero-text">
+            <h1>Welcome to Our Guest House</h1>
+            <p>Your satisfaction is our priority</p>
+        </div>
+    </div>
+   
+    <div id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="12.jpg" alt="Service 1">
+                <h3>Service 1</h3>
+                <p>Details about service 1.</p>
+            </div>
+            <div class="service">
+                <img src="123.jpg" alt="Service 2">
+                <h3>Service 2</h3>
+                <p>Details about service 2.</p>
+            </div>
+            <div class="service">
+                <img src="11.jpg" alt="Service 3">
+                <h3>Service 3</h3>
+                <p>Details about service 3.</p>
+            </div>
+        </div>
+    </div>
+  
+
+
+<div id="about" class="about-section">
+    <h2>About Us</h2>
+    <div class="about-container">
+        <img src="firmbee-com-gcsNOsPEXfs-unsplash.jpg" alt="About Image">
+        <div class="about-text">
+            <p>We are committed to providing the best services and facilities for our clients. Our building is equipped with state-of-the-art amenities to ensure your comfort and satisfaction.</p>
+            <p>Our team of professionals is dedicated to maintaining the highest standards of quality and service. We continually strive to improve our offerings and exceed your expectations.</p>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+   
+    <div>
+    <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+    <h2>If any Quarry then contact me</h2>
+    <div class="contact-icons">
+        <!-- Gmail --> <br>
+        <a href="mailto:Sanaeafiq983@gmail.com" target="_blank" class="contact-icon">
+            <i class="fa fa-google"></i>
+            <span>Gmail</span>
+        </a>
+        <br>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/SaNNy Rafiq" target="_blank" class="contact-icon">
+            <i class="fa fa-facebook"></i>
+            <span>Facebook</span>
+        </a>
+        <br>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/sanarafiqch" target="_blank" class="contact-icon">
+            <i class="fa fa-instagram"></i>
+
+            <span>Instagram</span>
+        </a>
+        <br>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/+923090616027" target="_blank" class="contact-icon">
+            <i class="fa fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+        <br>
+        <!-- Mobile Number -->
+        <a href="tel:+923090616027" class="contact-icon">
+            <i class="fa fa-phone"></i>
+            <span>Mobile</span>
+        </a>
+    </div>
+</div></div>
+<div id="map">
+   
+</div>
+<div class="footer">
+    <p>&copy; 2024 Building Website. All rights reserved.</p>
+</div>
+</body>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('aaa.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.menu-bar {
+    background: rgba(0, 0, 0, 0.897);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-bar ul li {
+    display: inline;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-bar ul li a:hover {
+    background: rgba(167, 245, 209, 0.3);
+    border-radius: 5px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.menu-bar ul li a {
+    animation: slideIn 0.5s forwards;
+}
+
+.menu-bar ul li a:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.menu-bar ul li a:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.menu-bar ul li a:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.menu-bar ul li a:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.menu-bar ul li.logo img {
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-bar ul li.logo img.animated-logo {
+    animation: rotateLogo 2s infinite linear;
+}
+
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    animation: fadeIn 2s;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    animation: slideIn 1s;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    animation: slideIn 2s;
+}
+.services-section {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    animation: slideIn 2s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.service p {
+    font-size: 1em;
+}
+.about-section {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-container img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    animation: slideIn 2s;
+}
+
+.about-text {
+    width: 50%;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.6;
+    animation: slideIn 2s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.contact-section {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    animation: fadeIn 2s;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+    .contact-form button:hover{ 
+        background-color: blue;
+    }
+    /* styles.css */
+
+/* styles.css */
+
+.thank-you-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.thank-you-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.thank-you-section p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.thank-you-section .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.thank-you-section .btn:hover {
+    background-color: #555;
+}
+#map {
+            height: 400px;
+            width: 100%;
+        }
+
+
+</style>
+<script src="script.js"></script>
+
+
+       <script>
+        // Function to initialize map
+        function initMap() {
+            // Check if browser supports Geolocation API
+            if (navigator.geolocation) {
+                // Get current position
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    // Coordinates
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+
+                    // Initialize map centered at current location
+                    const map = new google.maps.Map(document.getElementById('map'), {
+                        center: { lat, lng },
+                        zoom: 12 // Adjust zoom level as needed
+                    });
+
+                    // Marker for current location
+                    new google.maps.Marker({
+                        position: { lat, lng },
+                        map: map,
+                        title: 'Your Location'
+                    });
+                }, function() {
+                    // Handle errors if any
+                    handleLocationError(true);
+                });
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false);
+            }
+        }
+
+        // Function to handle errors
+        function handleLocationError(browserHasGeolocation) {
+            const errorDiv = document.createElement('div');
+            errorDiv.textContent = browserHasGeolocation ?
+                'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation.';
+            document.body.appendChild(errorDiv);
+        }
+    </script>
+    <!-- Load Google Maps JavaScript API with callback to initMap() -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+    <script>
+        // server.js
+
+const express = require('express');
+const path = require('path');
+
+const app = express();
+
+// Serve static files from the public directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Route to serve the HTML file
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.ejs'));
+});
+
+// Start server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+    </script>
+</body>
+</html>
+</script>
+
+</body>
+
+</html>
